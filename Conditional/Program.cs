@@ -13,16 +13,16 @@ namespace Conditional
     class Program
     {
         static void Main(string[] args)
-        {
+        {   // Ask user to enter a grade 
             Console.WriteLine("What grade do you expect to receive in ISM 4300?");
-
+            
             try
 
             {
                 // This will gather users input
                 string userInput = Console.ReadLine();
 
-                int Usergrade = int.Parse(userInput);
+                int Usergrade = int.Parse(userInput); // Parse user input into new variable "Usergrade"
 
 
 
@@ -35,84 +35,84 @@ namespace Conditional
                  */
 
 
-                if (Usergrade > 97 && Usergrade < 101)
+                if ((Usergrade > 97) && (Usergrade <= 100))
                 {
 
                     Console.WriteLine("You will receive an A+");
                     Console.WriteLine("Press any key to exit the program and try again...");
                     Console.ReadKey(true);
                 }
-                else if (Usergrade > 91 && Usergrade < 98)
+                else if ((Usergrade > 91) && (Usergrade < 98))
 
                 { Console.WriteLine("You will receive an A");
                     Console.WriteLine("Press any key to exit the program and try again...");
                     Console.ReadKey(true);
 
                 }
-                else if (Usergrade > 89 && Usergrade < 92)
+                else if ((Usergrade > 89 ) && (Usergrade < 92))
                 {
                     Console.WriteLine("You will receive an A-");
                     Console.WriteLine("Press any key to exit the program and try again...");
                     Console.ReadKey(true);
                 }
 
-                else if (Usergrade > 87 && Usergrade < 90)
+                else if ((Usergrade > 87) && (Usergrade < 90))
                 {
                     Console.WriteLine("You will receive an B+");
                     Console.WriteLine("Press any key to exit the program and try again...");
                     Console.ReadKey(true);
                 }
 
-                else if (Usergrade > 81 && Usergrade < 88)
+                else if ((Usergrade > 81) && (Usergrade < 88))
                 {
                     Console.WriteLine("You will receive an B");
                     Console.WriteLine("Press any key to exit the program and try again...");
                     Console.ReadKey(true);
                 }
 
-                else if (Usergrade > 79 && Usergrade < 82)
+                else if ((Usergrade > 79) && (Usergrade < 82))
                 {
                     Console.WriteLine("You will receive an B-");
                     Console.WriteLine("Press any key to exit the program and try again...");
                     Console.ReadKey(true);
                 }
 
-                else if (Usergrade > 77 && Usergrade < 80)
+                else if ((Usergrade > 77) && (Usergrade < 80))
                 {
                     Console.WriteLine("You will receive an C+");
                     Console.WriteLine("Press any key to exit the program and try again...");
                     Console.ReadKey(true);
                 }
 
-                else if (Usergrade > 71 && Usergrade < 78)
+                else if ((Usergrade > 71) && (Usergrade < 78))
                 {
                     Console.WriteLine("You will receive an C");
                     Console.WriteLine("Press any key to exit the program and try again...");
                     Console.ReadKey(true);
                 }
 
-                else if (Usergrade > 69 && Usergrade < 72)
+                else if ((Usergrade > 69) && (Usergrade < 72))
                 {
                     Console.WriteLine("You will receive an C-");
                     Console.WriteLine("Press any key to exit the program and try again...");
                     Console.ReadKey(true);
                 }
 
-                else if (Usergrade > 67 && Usergrade < 70)
+                else if ((Usergrade > 67) && (Usergrade < 70))
                 {
                     Console.WriteLine("You will receive an D+");
                     Console.WriteLine("Press any key to exit the program and try again...");
                     Console.ReadKey(true);
                 }
 
-                else if (Usergrade > 61 && Usergrade < 68)
+                else if ((Usergrade > 61) && (Usergrade < 68))
                 {
                     Console.WriteLine("You will receive an D");
                     Console.WriteLine("Press any key to exit the program and try again...");
                     Console.ReadKey(true);
                 }
 
-                else if (Usergrade > 59 && Usergrade < 62)
+                else if ((Usergrade > 59) && (Usergrade < 62))
                 {
                     Console.WriteLine("You will receive an D-");
                     Console.WriteLine("Press any key to exit the program and try again...");
@@ -125,21 +125,22 @@ namespace Conditional
                     Console.WriteLine("Press any key to exit the program and try again...");
                     Console.ReadKey(true);
                 }
-            }
+            } //End of try
             catch
             {
                 Console.WriteLine("Please use an integer data type for expected grade");
                 Console.WriteLine("Press any key to exit the program and try again...");
                 Console.ReadKey(true);
-            }
+            }//End of catch
             
 
 
 
 
-            }
+            } // End of static 
 
 
-        }
-    }
+        }// End of class 
+
+    }// End of namespace
 
